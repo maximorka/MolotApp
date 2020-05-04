@@ -1,0 +1,47 @@
+.Hbox{
+	-fx-background-color: #e5e5e5;
+}
+
+.vBox{
+	-fx-border-style: solid;
+	-fx-border-width: 2;
+	-fx-border-color: grey;
+}
+
+
+.buttonSend{
+	-fx-text-fill: black;
+	-fx-background-color: 
+		linear-gradient(#7fb3ad, #a9cdc5),
+		radial-gradient(center 50% -40%, radius 200%, #a9cdc5 45%, #7fb3ad 50%);
+	-fx-border-color: black;
+	-fx-border-radius: 0;
+	-fx-background-radius: 0;
+	-fx-padding: 0;
+}
+
+.buttonSetting{ 
+	-fx-background-color: none;    
+ 	-fx-background-image: url('/images/setting.png');
+	-fx-background-size: 40;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: 50%;
+}
+
+/*.choiseBox{*/
+	/*-fx-text-fill:black;*/
+	/*-fx-font-size: 14px;*/
+	/*-fx-font-weight: bold;*/
+	/*-fx-font-style: italic;*/
+/*}*/
+
+
+.typeRxTxChoice{
+	//-fx-text-fill: #1ead10;
+	/*-fx-font-size: 16px;*/
+	-fx-font-weight: bold;
+	-fx-font-style: italic;
+}
+
+
+

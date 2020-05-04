@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="777.0" prefWidth="953.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.first.ui.MainController">
+   <top>
+      <HBox prefHeight="54.0" prefWidth="927.0" styleClass="Hbox" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="54.0" prefWidth="22.0" />
+            <AnchorPane prefHeight="54.0" prefWidth="68.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="68.0" text="Режим:" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="3.0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="37.0" prefWidth="112.0">
+               <children>
+                  <ChoiceBox fx:id="modeOperation" layoutX="3.0" layoutY="9.0" prefHeight="37.0" prefWidth="103.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="8.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="48.0" prefWidth="178.0">
+               <children>
+                  <Button fx:id="connectButton" layoutX="9.0" layoutY="8.0" mnemonicParsing="false" onAction="#connecting" prefHeight="39.0" prefWidth="160.0" styleClass="buttonConect" text="Підключитись" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="8.0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="45.0" prefWidth="33.0" />
+            <AnchorPane prefHeight="54.0" prefWidth="176.0" />
+            <AnchorPane prefHeight="49.0" prefWidth="91.0">
+               <children>
+                  <Label fx:id="freqRxLabel" layoutX="36.0" layoutY="16.0" prefHeight="43.0" prefWidth="86.0" text="ПРМ, кГц" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="3.0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="49.0" prefWidth="78.0">
+               <children>
+                  <TextField fx:id="freqRxTextField" layoutX="6.0" layoutY="7.0" prefHeight="32.0" prefWidth="66.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="8.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="52.0" prefWidth="57.0">
+               <children>
+                  <Label fx:id="freqTxLabel" layoutX="60.0" layoutY="16.0" text="ПРД, кГц" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="3.0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="54.0" prefWidth="96.0">
+               <children>
+                  <TextField fx:id="freqTxTextField" layoutY="8.0" prefHeight="30.0" prefWidth="68.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="8.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="707.0" prefWidth="953.0" stylesheets="@../css/Main.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="700.0" prefWidth="953.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="222.0" prefWidth="953.0">
+                     <children>
+                        <VBox layoutX="14.0" layoutY="10.0" prefHeight="207.0" prefWidth="916.0" styleClass="vBox" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="3.0">
+                           <children>
+                              <HBox prefHeight="37.0" prefWidth="200.0">
+                                 <children>
+                                    <AnchorPane prefHeight="36.0" prefWidth="166.0">
+                                       <children>
+                                          <Label prefHeight="30.0" prefWidth="195.0" text="№ кореспондента:" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="36.0" prefWidth="66.0">
+                                       <children>
+                                          <TextField fx:id="correspondentNumber" prefHeight="30.0" prefWidth="66.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="10.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="36.0" prefWidth="432.0" />
+                                    <AnchorPane prefHeight="37.0" prefWidth="148.0">
+                                       <children>
+                                          <Label layoutX="52.0" layoutY="10.0" text="Перевідна група:" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="36.0" prefWidth="89.0">
+                                       <children>
+                                          <TextField fx:id="freq1" layoutX="3.0" layoutY="3.0" prefHeight="31.0" prefWidth="89.0" AnchorPane.topAnchor="10.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="5.0" prefWidth="913.0" />
+                              <HBox prefHeight="37.0" prefWidth="200.0">
+                                 <children>
+                                    <AnchorPane prefHeight="37.0" prefWidth="94.0">
+                                       <children>
+                                          <Label text="Команда:" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="37.0" prefWidth="68.0">
+                                       <children>
+                                          <ChoiceBox fx:id="command" prefHeight="31.0" prefWidth="91.0" stylesheets="@../css/Main.css" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="3.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="37.0" prefWidth="59.0" />
+                                    <AnchorPane prefHeight="37.0" prefWidth="216.0">
+                                       <children>
+                                          <Label layoutX="5.0" prefHeight="30.0" prefWidth="208.0" text="Службове пов:" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="37.0" prefWidth="470.0">
+                                       <children>
+                                          <TextField fx:id="serviceMessage" layoutX="-81.0" prefHeight="31.0" prefWidth="548.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="-81.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="5.0" prefWidth="913.0" />
+                              <HBox prefHeight="37.0" prefWidth="200.0">
+                                 <children>
+                                    <AnchorPane prefHeight="38.0" prefWidth="703.0">
+                                       <children>
+                                          <TextField fx:id="urlFile" editable="false" prefHeight="39.0" prefWidth="687.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="3.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="45.0" prefWidth="195.0">
+                                       <children>
+                                          <Button layoutX="23.0" layoutY="3.0" mnemonicParsing="false" onAction="#openFile" prefHeight="38.0" prefWidth="177.0" text="Вибрати радіограму" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="3.0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="10.0" prefWidth="916.0" />
+                              <HBox prefHeight="77.0" prefWidth="916.0">
+                                 <children>
+                                    <AnchorPane prefHeight="60.0" prefWidth="706.0" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button layoutX="21.0" mnemonicParsing="false" onAction="#sendingMessage" prefHeight="63.0" prefWidth="176.0" styleClass="buttonSend" stylesheets="@../css/Main.css" text="Надіслати" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="0.0">
+                                             <font>
+                                                <Font name="System Bold Italic" size="17.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="454.0" prefWidth="953.0">
+                     <children>
+                        <VBox prefHeight="465.0" prefWidth="913.0" styleClass="vBox" AnchorPane.bottomAnchor="-11.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="19.0" prefWidth="909.0">
+                                 <children>
+                                    <Label alignment="TOP_CENTER" prefHeight="27.0" prefWidth="899.0" styleClass="Hbox" text="Повідомлення" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="434.0" prefWidth="909.0">
+                                 <children>
+                                    <TextArea fx:id="messageHistory" editable="false" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="40.0" prefWidth="947.0" styleClass="Hbox" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#setting" prefHeight="39.0" prefWidth="52.0" styleClass="buttonSetting" stylesheets="@../css/Main.css" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
